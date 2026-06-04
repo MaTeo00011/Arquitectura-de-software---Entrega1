@@ -1,11 +1,12 @@
 package comportamiento.graznido;
 
-import comportamiento.interfaces.comportamientoGraznido;
+import comportamiento.interfaces.ComportamientoGraznido;
 
-public class mudo implements comportamientoGraznido {
+// Deshabilita el sonido
+public class Mudo implements ComportamientoGraznido {
 
     @Override
     public void quack() {
-        System.out.println("...");
+        System.out.println("...(silencio)");
     }
 }

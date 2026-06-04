@@ -1,22 +1,33 @@
-import patos.tipoPato.PatoMallard;
-import patos.tipoPato.patoDeHule;
+import patos.tipoPato.*;
+import java.util.ArrayList;
+import java.util.List;
 
-public class main {
-
+public class Main {
     public static void main(String[] args) {
 
-        PatoMallard mallard = new PatoMallard();
+        System.out.println("====================================");
+        System.out.println("  SIMULADOR DE PATOS - Patrón Strategy");
+        System.out.println("====================================\n");
 
-        mallard.dibujar();
-        mallard.volar();
-        mallard.sonido();
+    // Lista de patos — fácil de ampliar sin cambiar el resto del código
+        List<Pato> patos = new ArrayList<>();
+        patos.add(new PatoMallard());
+        patos.add(new PatoMandarin());
+        patos.add(new PatoDeHule());
+        patos.add(new PatoDeCasa());
 
-        System.out.println();
+    // Recorrer todos los patos con el mismo código
+        for (Pato p : patos) {
+            p.dibujar();
+            p.nadar();
+            p.hacerQuack();
+            p.emprenderVuelo();
+            System.out.println();
+        }
 
-        patoDeHule hule = new patoDeHule();
-
-        hule.dibujar();
-        hule.volar();
-        hule.sonido();
+    
+        System.out.println("\n====================================");
+        System.out.println("  Fin de la simulación");
+        System.out.println("====================================");
     }
 }

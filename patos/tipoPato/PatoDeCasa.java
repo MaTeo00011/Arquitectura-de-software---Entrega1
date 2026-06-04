@@ -1,18 +1,16 @@
 package patos.tipoPato;
 
-import comportamiento.tipoVuelo.sinVuelo;
-
-public class PatoDeCasa extends pato {
+public class PatoDeCasa extends Pato {
 
     public PatoDeCasa() {
-
-        comportamientoVuelo = new sinVuelo();
-        comportamientoGraznido = new comportamiento.graznido.mudo();
-
+        super();
+        // El pato de casa no vuela y es silencioso
+        establecerComportamientoDeVuelo("sinvuelo");
+        establecerComportamientoDeGraznido("mudo");
     }
 
     @Override
     public void dibujar() {
-        System.out.println("Soy un pato de casa");
+        System.out.println("Soy un Pato De Casa, domesticado y tranquilo.");
     }
 }

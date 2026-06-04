@@ -1,11 +1,12 @@
 package comportamiento.tipoVuelo;
 
-import comportamiento.interfaces.comportamientoVuelo;
+import comportamiento.interfaces.ComportamientoVuelo;
 
-public class volarConAlas implements comportamientoVuelo {
+// Implementa un vuelo normal con alas
+public class VolarConAlas implements ComportamientoVuelo {
 
     @Override
     public void volar() {
-        System.out.println("Estoy volando con alas");
+        System.out.println("Estoy volando con alas!");
     }
 }

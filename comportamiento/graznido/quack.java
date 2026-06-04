@@ -1,12 +1,12 @@
 package comportamiento.graznido;
 
-import comportamiento.interfaces.comportamientoGraznido;
+import comportamiento.interfaces.ComportamientoGraznido;
 
-public class quack implements comportamientoGraznido {
+// Sonido normal de pato
+public class Quack implements ComportamientoGraznido {
 
     @Override
     public void quack() {
-        System.out.println("Quack!");
+        System.out.println("Quack! Quack!");
     }
-
 }

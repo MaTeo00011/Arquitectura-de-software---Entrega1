@@ -1,11 +1,12 @@
 package comportamiento.graznido;
 
-import comportamiento.interfaces.comportamientoGraznido;
+import comportamiento.interfaces.ComportamientoGraznido;
 
-public class chillido implements comportamientoGraznido {
+// Sonido de pato producido por un pito
+public class Chillido implements ComportamientoGraznido {
 
     @Override
     public void quack() {
-        System.out.println("Piiiiii!");
+        System.out.println("Fiiiiuuu! (sonido de pito)");
     }
 }

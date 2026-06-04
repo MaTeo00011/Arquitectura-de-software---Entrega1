@@ -1,5 +1,5 @@
 package comportamiento.interfaces;
 
-public interface comportamientoVuelo {
+public interface ComportamientoVuelo {
     void volar();
 }
