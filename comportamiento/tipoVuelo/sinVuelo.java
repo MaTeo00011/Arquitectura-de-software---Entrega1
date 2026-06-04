@@ -1,11 +1,12 @@
 package comportamiento.tipoVuelo;
 
-import comportamiento.interfaces.comportamientoVuelo;
+import comportamiento.interfaces.ComportamientoVuelo;
 
-public class sinVuelo implements comportamientoVuelo {
+// Deshabilita el vuelo
+public class SinVuelo implements ComportamientoVuelo {
 
     @Override
     public void volar() {
-        System.out.println("No puedo volar");
+        System.out.println("No puedo volar!");
     }
 }

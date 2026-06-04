@@ -1,16 +1,13 @@
 package patos.tipoPato;
 
-public class PatoMallard extends pato {
+public class PatoMallard extends Pato {
 
     public PatoMallard() {
-
-        comportamientoVuelo = new comportamiento.tipoVuelo.volarConAlas();
-        comportamientoGraznido = new comportamiento.graznido.quack();
-
+        super(); // Hereda VolarConAlas + Quack por defecto
     }
 
     @Override
     public void dibujar() {
-        System.out.println("Soy un pato Mallard");
+        System.out.println("Soy un Pato Mallard (pato real) con cabeza verde brillante.");
     }
 }

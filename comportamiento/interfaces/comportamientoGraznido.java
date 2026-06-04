@@ -1,5 +1,5 @@
 package comportamiento.interfaces;
 
-public interface comportamientoGraznido {
+public interface ComportamientoGraznido {
     void quack();
 }
